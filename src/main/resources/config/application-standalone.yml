@@ -1,0 +1,14 @@
+spring:
+  redis:
+    database: 0 # Database index used by the connection factory.(0)
+    host: 127.0.0.1 # Redis server host.(localhost)
+    port: 6379 # Redis server port.(6379)
+    username: # Login username of the redis server.
+    password: # Login password of the redis server.
+    timeout: 10000 # Read timeout.(ms)
+#    lettuce:
+#      pool:
+#        max-active: 8 # Maximum number of connections that can be allocated by the pool at a given time. Use a negative value for no limit.(8)
+#        max-idle: 8 # Maximum number of "idle" connections in the pool. Use a negative value to indicate an unlimited number of idle connections.(8)
+#        min-idle: 0 # Target for the minimum number of idle connections to maintain in the pool. This setting only has an effect if both it and time between eviction runs are positive.(0)
+#        max-wait: -1 # Maximum amount of time a connection allocation should block before throwing an exception when the pool is exhausted. Use a negative value to block indefinitely.(-1ms)

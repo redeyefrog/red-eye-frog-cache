@@ -1,0 +1,15 @@
+logging:
+  level:
+    root: info
+    org.springframework: info
+    org.redeyefrog: debug
+  pattern:
+    console: "%red(%d{yyyy-MM-dd HH:mm:ss}) %yellow([%thread]) %highlight(%-5level) %logger:%L - %green(%msg%n)"
+
+spring:
+  profiles:
+    active: cluster
+  data:
+    redis:
+      repositories:
+        enabled: false # avoid print "Multiple Spring Data modules found, entering strict repository configuration mode"
